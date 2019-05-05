@@ -1,4 +1,16 @@
-.main-wrapper {
+.outer-grid {
+  transform: rotate(-45deg);
+}
+
+.inner-grid {
+  width: 400px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.whole {
   width: 200px;
   height: 200px;
   display: grid;
@@ -6,54 +18,54 @@
   grid-template-rows: 1fr 1fr;
 }
 
-.square-wrapper {
-  width: 100px;
-  height: 100px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+.quarter {
+  font-size: 20px;
+  color: red;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1;
 }
 
-.square:nth-child(1) {
+.quarter:nth-child(1) {
   grid-column: 1;
   background: repeating-linear-gradient(
     45deg,
     white,
-    white 5px,
-    black 5px,
-    black 10px
+    white 10px,
+    black 10px,
+    black 20px
   );
 }
 
-.square:nth-child(2) {
+.quarter:nth-child(2) {
   grid-column: 2;
   background: repeating-linear-gradient(
     -45deg,
     white,
-    white 5px,
-    black 5px,
-    black 10px
+    white 10px,
+    black 10px,
+    black 20px
   );
 }
 
-.square:nth-child(3) {
+.quarter:nth-child(3) {
   grid-column: 1;
   background: repeating-linear-gradient(
     135deg,
     white,
-    white 5px,
-    black 5px,
-    black 10px
+    white 10px,
+    black 10px,
+    black 20px
   );
 }
 
-.square:nth-child(4) {
+.quarter:nth-child(4) {
   grid-column: 2;
   background: repeating-linear-gradient(
     225deg,
     white,
-    white 5px,
-    black 5px,
-    black 10px
+    white 10px,
+    black 10px,
+    black 20px
   );
 }
