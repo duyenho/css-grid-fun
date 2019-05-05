@@ -5,6 +5,7 @@
   grid-gap: 8px;
   transform: rotate(-45deg);
   transform-origin: 30% -50%;
+  margin-top: 50px;
 }
 
 .description {
@@ -21,6 +22,7 @@
 .description:nth-child(1) {
   grid-column: 1;
   justify-self: end;
+  margin-right: -15px;
 }
 
 .description:nth-child(2) {
