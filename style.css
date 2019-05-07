@@ -4,8 +4,7 @@
   grid-template-rows: auto auto 1fr;
   grid-gap: 8px;
   transform: rotate(-45deg);
-  transform-origin: 30% -50%;
-  margin-top: 50px;
+  margin: 50px 0 0 100px;
 }
 
 .description {
@@ -117,4 +116,11 @@
     black 7px,
     black 12px
   );
+}
+
+@media (min-width: 700px) {
+  .outer-grid {
+    margin-left: 0;
+    transform-origin: 30% -50%;
+  }
 }
